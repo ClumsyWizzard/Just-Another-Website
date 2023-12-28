@@ -90,3 +90,11 @@ h1 {
   cursor: pointer;
 }
  
+.btn{
+  color: #fff;
+  background-color: black;
+  border-radius: 11px;
+  padding: .4rem;
+  margin: auto;
+
+}

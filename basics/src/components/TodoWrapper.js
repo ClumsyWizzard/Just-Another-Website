@@ -58,6 +58,7 @@ export const TodoWrapper = () => {
           />
         )
       )}
+      <button className="btn">Lets Skip To The Good Part</button>
     </div>
   );
 };
