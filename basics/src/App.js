@@ -1,10 +1,14 @@
 import './App.css';
+import Landing from './Next/landing';
 import { TodoWrapper } from './components/TodoWrapper';
+import Form from './Next/from';
 
 function App() {
   return (
     <div className="App">
-      <TodoWrapper  />
+      {/* <TodoWrapper  /> */}
+      {/* <Landing/> */}
+      <Form/>
     </div>
   );
 }

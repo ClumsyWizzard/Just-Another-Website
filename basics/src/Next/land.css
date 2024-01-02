@@ -1,0 +1,68 @@
+
+
+.box{
+    
+    justify-content: center;
+    margin: auto;
+    color: aliceblue;
+}
+
+.wrapper{
+    font-size: xx-large;
+    font-weight: 800;
+}
+
+.hero{
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero p {
+    font-size: xx-large;
+    font-weight: 600;
+}
+
+.qt{
+    height: 10rem;
+}
+
+.why{
+    margin: 5rem;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   font-size: larger;
+   font-weight: 800;
+}
+
+.section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 35%;
+}
+
+.yes{
+    background-color: black;
+    color: aliceblue;
+    border-radius: 30%;
+    font-size: large;
+    padding: .5rem;
+}
+
+.no{
+    
+        background-color: black;
+        color: aliceblue;
+        border-radius: 30%;
+        font-size: large;
+        padding: .5rem;   
+}
+
+.no:hover{
+    display: none;
+}
+
+
