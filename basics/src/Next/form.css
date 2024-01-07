@@ -76,7 +76,8 @@
     background-color: black;
     color: aliceblue;
     font-size: larger;
-    padding: 0.6rem;
+    padding: 1rem;
+    
     font-weight: 600;
     border-radius: 35%;
   }
@@ -90,6 +91,7 @@
   .yes p{
     text-decoration: none;
     color: aliceblue;
+
   }
   
   /* Media query for smaller screens */

@@ -32,21 +32,57 @@ const Form = () => {
   return (
   <div className='baax'>
     <div className='typer'>
+
+
+
 <Typewriter
-  options={{
-    strings: ["wanna Hnagout with me :) ?"],
-    autoStart: true,
-    loop: true,
+  onInit={(typewriter) => {
+
+    typewriter.typeString('Hi!')
+    .pauseFor(2000)
+    .deleteAll()
+    .changeDelay(70)
+    .changeDeleteSpeed(10)
+
+    typewriter.typeString('Words Can\'t express what i felt...')
+     .pauseFor(1500)
+      .deleteAll()
+
+      typewriter.typeString('Or is it the shy me..')
+      .pauseFor(300)
+      typewriter.typeString('?')
+      .pauseFor(1500)
+      .deleteAll()
+
+      typewriter.typeString('Anyways.. ')
+      .pauseFor(300)
+      typewriter.typeString('I made a page to make it..')
+      .pauseFor(300)
+      typewriter.typeString(' easier..')
+      .pauseFor(1500)
+      .deleteAll()
+      .changeDeleteSpeed(10)
+
+      typewriter.typeString('Will you marry')
+      .pauseFor(0.1)
+      .deleteChars(5)
+      typewriter.typeString('go out on a date with me...?')
+      .pauseFor(1500)
+      .start();
+      
   }}
- /> 
+/>
+
+ 
  </div>
 
   <button className='no'
-      onClick={handleClick}
+      onMouseOver={handleClick}
       style={{
         position: 'absolute',
         top: position.top,
         left: position.left,
+        
       }}
     >
       No
