@@ -125,10 +125,13 @@
     text-decoration: none;
 }
 
+
 .sub:hover {
     box-shadow: rgba(0, 0, 0, 0.22) 0px 19px 43px;
     transform: translate3d(0px, -1px, 0px);
+
 }
+
 
 .sub img {
     max-width: 100%; /* Ensure images don't exceed their container's width */
@@ -150,6 +153,8 @@
     text-decoration: none;
 
 }
+
+
 
 /* Media query for smaller screens (e.g., mobile devices) */
 @media only screen and (max-width: 600px) {

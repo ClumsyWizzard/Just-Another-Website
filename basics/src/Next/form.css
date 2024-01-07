@@ -1,88 +1,106 @@
-/* 
-.typer{
-    font-size: xx-large;
-    font-weight: 800;
-    display: flex;
-    margin-top: 10rem;
-
-}
-
-.butt{
-    display: flex;
-   flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10rem;
-
-}
-
-.yes  {
-    font-size: larger;
-    font-weight: 600;
-    background-color: black;
-    color: aliceblue;
-    padding: 0.4rem;
-    border-radius: 0.4rem;
-
-}
-
-.no{
-    font-size: larger;
-    font-weight: 600;
-    background-color: black;
-    color: aliceblue;
-    padding: 0.4rem;
-    border-radius: 0.4rem;
-}
-
-.no:hover{
-    display: none;
-} */
-
-/* Common styles for both desktop and mobile */
-
-.baax{
-    background: url(/public/background.jpg);
-}
-.typer {
-    font-size: xx-large;
-    font-weight: 800;
-    display: flex;
-    margin-top: 10rem;
-}
-
-.butt {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 10rem;
-    gap: 5rem;
-}
-
-.yes, .no {
-    font-size: larger;
-    font-weight: 600;
-    background-color: black;
-    color: aliceblue;
-    padding: 0.4rem;
-    border-radius: 0.4rem;
+/* YourComponent.css */
+/* .baax {
     
-}
+    background: url(/public/background.jpg);
+  
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+   
+    height: 100vh;
+  
+    
+    color: white;
+    
+  }
+  
+  .typer{
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-size: 5rem;
+    font-weight: 800;    
+  }
 
-.no:hover{
-    display: none;
-}
+  .yes{
+    background-color: black;
+    color: aliceblue;
+    font-size: larger;
+    padding: 0.6rem;
+    font-weight: 600;
+    border-radius: 35%;
+    margin: auto;
+    display: flex;
+    margin-top: 20rem;
+  }
 
-/* Media query for smaller screens (e.g., mobile devices) */
-@media only screen and (max-width: 600px) {
+  .no{
+    background-color: black;
+    color: aliceblue;
+    font-size: larger;
+    padding: 0.6rem;
+    font-weight: 600;
+    border-radius: 35%;
+  } */
+
+  /* YourComponent.css */
+.baax {
+    /* Set the background image */
+    background: url(/public/background.jpg);
+  
+    /* Set background properties for full coverage */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+    /* Set the height to cover the entire viewport */
+    height: 100vh;
+  
+    /* Optionally, add other styling for your content */
+    color: white;
+    /* ... other styles */
+  }
+  
+  .typer {
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    font-size: 5rem;
+    font-weight: 800;
+  }
+  
+  .yes,
+  .no {
+    background-color: black;
+    color: aliceblue;
+    font-size: larger;
+    padding: 0.6rem;
+    font-weight: 600;
+    border-radius: 35%;
+  }
+  
+  .yes {
+    margin: auto;
+    display: flex;
+    margin-top: 20rem;
+  }
+
+  .yes p{
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
     .typer {
-        font-size: large; /* Adjust font size for smaller screens */
-        margin-top: 5rem; /* Adjust margin for smaller screens */
+      font-size: 3rem;
     }
-
-    .butt {
-        flex-direction: column; /* Stack buttons vertically on smaller screens */
-        margin-top: 5rem; /* Adjust margin for smaller screens */
+  
+    .yes,
+    .no {
+      font-size: medium;
     }
-}
+  }
+  

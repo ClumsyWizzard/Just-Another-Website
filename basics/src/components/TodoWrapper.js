@@ -9,6 +9,15 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 
 
 export const TodoWrapper = () => {
+
+  const divStyle = {
+    color: 'white',
+    backgroundColor: 'black',
+    padding: '10px', // Add padding as needed
+    borderRadius: '8px', // Add border radius as needed
+    
+  };
+
   const [todos, setTodos] = useState([]);
 
   const addTodo = (todo) => {
@@ -45,6 +54,7 @@ export const TodoWrapper = () => {
   };
 
   return (
+    <div className="container">
     <div className="TodoWrapper">
       <h1>Get Things Done !</h1>
       <TodoForm addTodo={addTodo} />
@@ -62,7 +72,8 @@ export const TodoWrapper = () => {
           />
         )
       )}
-      <button className="btn"><Link to="/form">More Functionality</Link></button>
+      <button className="btn"><Link to="/form"><p style={divStyle}>More Functionality</p></Link></button>
+    </div>
     </div>
   );
 };

@@ -1,3 +1,11 @@
+/* .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin-top: -10rem;
+}
+
 h1 {
     color: #fff;
     margin-bottom: 0.5rem;
@@ -9,6 +17,7 @@ h1 {
     margin-top: 5rem;
     padding: 2rem;
     border-radius: 5px;
+    
   }
   
   .TodoForm {
@@ -71,12 +80,146 @@ h1 {
   }
    
   .btn{
-    color: #fff;
+    
     background-color: black;
     border-radius: 11px;
     padding: .4rem;
     margin: auto;
-  
+    text-decoration: none;
+    color: beige;
+  } */
+
+
+  /* YourComponent.css */
+/* YourComponent.css */
+/* YourComponent.css */
+/* YourComponent.css */
+/* YourComponent.css */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start of the container */
+  min-height: 100vh;
+  overflow: hidden; /* Hide overflow to ensure the background image doesn't create a scrollbar */
+
+  /* Set the background image */
+  background: url(/public/background.jpg);
+  /* Set background properties for full coverage */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* Set the height to cover the entire viewport */
+  height: 100vh;
+  /* Optionally, add other styling for your content */
+  color: white;
+  /* ... other styles */
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #1A1A40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 5px;
+}
+
+.TodoForm {
+  display: flex;
+  justify-content: space-between; /* Align input and button to the ends */
+  align-items: center;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  width: calc(80% - 0.5rem); /* Adjust width for smaller screens and add gap */
+  color: #fff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff4d;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem; /* Adjust padding for button */
+  cursor: pointer;
+  margin-left: 0.5rem; /* Add gap between input and button */
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.incompleted,
+.completed {
+  cursor: pointer;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+}
+
+.btn {
+  background-color: black;
+  border-radius: 11px;
+  padding: 0.4rem;
+  margin: auto;
+  text-decoration: none;
+  color: beige;
+}
+
+/* Responsive styles for smaller screens or shorter height */
+@media screen and (max-height: 600px) {
+  .container {
+    margin-top: 0;
   }
 
-  
+  .Todo {
+    flex-direction: column; /* Change to column for responsiveness */
+  }
+
+  .todo-input {
+    width: calc(80% - 0.5rem); /* Adjust width for smaller screens and add gap */
+  }
+
+  .TodoForm {
+    flex-direction: column; /* Change to column for responsiveness */
+    align-items: flex-start;
+  }
+
+  .todo-btn {
+    margin-top: 1rem;
+    margin-left: 0; /* Reset margin left for smaller screens */
+  }
+}
