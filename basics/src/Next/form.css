@@ -1,0 +1,88 @@
+/* 
+.typer{
+    font-size: xx-large;
+    font-weight: 800;
+    display: flex;
+    margin-top: 10rem;
+
+}
+
+.butt{
+    display: flex;
+   flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+
+}
+
+.yes  {
+    font-size: larger;
+    font-weight: 600;
+    background-color: black;
+    color: aliceblue;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+
+}
+
+.no{
+    font-size: larger;
+    font-weight: 600;
+    background-color: black;
+    color: aliceblue;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+}
+
+.no:hover{
+    display: none;
+} */
+
+/* Common styles for both desktop and mobile */
+
+.baax{
+    background: url(/public/background.jpg);
+}
+.typer {
+    font-size: xx-large;
+    font-weight: 800;
+    display: flex;
+    margin-top: 10rem;
+}
+
+.butt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10rem;
+    gap: 5rem;
+}
+
+.yes, .no {
+    font-size: larger;
+    font-weight: 600;
+    background-color: black;
+    color: aliceblue;
+    padding: 0.4rem;
+    border-radius: 0.4rem;
+    
+}
+
+.no:hover{
+    display: none;
+}
+
+/* Media query for smaller screens (e.g., mobile devices) */
+@media only screen and (max-width: 600px) {
+    .typer {
+        font-size: large; /* Adjust font size for smaller screens */
+        margin-top: 5rem; /* Adjust margin for smaller screens */
+    }
+
+    .butt {
+        flex-direction: column; /* Stack buttons vertically on smaller screens */
+        margin-top: 5rem; /* Adjust margin for smaller screens */
+    }
+}

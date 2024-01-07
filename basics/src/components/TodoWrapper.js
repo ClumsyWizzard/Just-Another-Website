@@ -4,6 +4,8 @@ import { TodoForm } from "./TodoForm";
 import { v4 as uuidv4 } from "uuid";
 import { EditTodoForm } from "./EditTodoForm";
 import "./ToDo.css";
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+
 
 
 export const TodoWrapper = () => {
@@ -60,7 +62,7 @@ export const TodoWrapper = () => {
           />
         )
       )}
-      <button className="btn">Lets Skip To The Good Part</button>
+      <button className="btn"><Link to="/form">More Functionality</Link></button>
     </div>
   );
 };
